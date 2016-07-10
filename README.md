@@ -29,3 +29,5 @@ To transmit the binary sequence `1100101` with a period of 200us, logic high of 
 sudo ./TransmitPi -r 10 transmit 10101010 100 50 200 2
 ```
 The resultant waveform will be
+
+![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint2.png?raw=true "Total waveform")
