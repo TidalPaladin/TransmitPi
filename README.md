@@ -31,3 +31,16 @@ sudo ./TransmitPi -r 10 transmit 10101010 100 50 200 2
 The resultant waveform will be
 
 ![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint2.png?raw=true "Total waveform")
+
+The top waveform shows the transmit signal over 2 seconds. The bottom waveform is zoomed on a single transmit burst, where 10 repeats are visible. Zooming in gives
+
+![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint3.png?raw=true "Total waveform")
+
+Now the top waveform shows a series of repeats, while the bottom waveform shows the binary data. Finally, zooming in to take measurements gives
+
+![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint5.png?raw=true "Total waveform")
+
+The period is measured to be 200us, the logic 1 pulse is 99us, and the logic 0 pulse is 49us.
+
+
+
