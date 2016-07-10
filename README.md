@@ -20,3 +20,12 @@ The options are as follows - **All times are in microseconds unless otherwise sp
 * `<high>/<low>/<period>` - Sets the high/low times and period of the binary sequence
 * `<duration>` - Transmission will continue for `<duration>` **seconds**. Set to `0` for a single transmission burst.
 
+Reliable reproduction of waveforms declines rapidly for logic times less than 10us
+
+##Examples
+
+To transmit the binary sequence `1100101` with a period of 200us, logic high of 100us, and logic low of 50us with 10 repeats in a burst for 2 seconds
+```
+sudo ./TransmitPi -r 10 transmit 10101010 100 50 200 2
+```
+The resultant waveform will be
