@@ -17,7 +17,7 @@ The options are as follows - **All times are in microseconds unless otherwise sp
 * `[-p <pin>]` - Sets the pin to be used
 * `[-sync <high> <low>]` - Transmit a sync pulse of given high/low time before the binary data sequence
 * `<binary sequence>` - The binary sequence to be transmitted. Given as a string ("101010")
-* `<high>/<low>/<period>` - Sets the high/low times and period of the binary sequence
+* `<high>/<low>/<period>` - Sets the time a pin will be set high/low for logic 1/0 respectively, along with the period of each bit.
 * `<duration>` - Transmission will continue for `<duration>` **seconds**. Set to `0` for a single transmission burst.
 
 Reliable reproduction of waveforms declines rapidly for logic times less than 10us
@@ -41,6 +41,10 @@ Now the top waveform shows a series of repeats, while the bottom waveform shows 
 ![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint5.png?raw=true "Total waveform")
 
 The period is measured to be 200us, the logic 1 pulse is 99us, and the logic 0 pulse is 49us.
+
+Below is a demonstration of a sync pulse. The waveform is of the same 100us high, 50us low, 200us period as before. The sync pulse is of 300us high, 100us low.
+
+![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint6.png?raw=true "Total waveform")
 
 
 
