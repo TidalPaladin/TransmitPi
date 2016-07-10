@@ -4,7 +4,11 @@ TransmitPi can be used to control RF transmitters from a Raspberry Pi.
 
   
 ## Installation
-After cloning the package execute `make` to compile the code
+TransmitPi requires the WiringPi package, which can be installed by executing
+```
+sudo apt-get install wiringpi
+```
+Next clone the pacakge with `git`. After cloning the package `cd` to the destination folder and execute `make` to compile the code.
 
 ## Usage
 TransmitPi must be run as sudo. Usage is as follows
@@ -45,6 +49,3 @@ The period is measured to be 200us, the logic 1 pulse is 99us, and the logic 0 p
 Below is a demonstration of a sync pulse. The waveform is of the same 100us high, 50us low, 200us period as before. The sync pulse is of 300us high, 100us low.
 
 ![Alt text](/../screenshots/screenshots/DS1Z_QuickPrint6.png?raw=true "Total waveform")
-
-
-
